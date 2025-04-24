@@ -25,7 +25,7 @@ const Checkout_function = () => {
     <h1 class="md:text-9xl text-8xl mb-10 text-center">CONNECT</h1>
     <div class="flex flex-wrap flex-row justify-center align-center gap-x-4 gap-y-5">
 
-      <select name="" id="select" v-model="course" class="outline-2 px-4 p-2 text-2xl rounded-sm">
+      <select name="" id="select" v-model="course" class="outline-2 px-4 p-2 text-2xl rounded-sm" required>
         <option value="" disabled class="">
           Courses
         </option>
@@ -33,18 +33,20 @@ const Checkout_function = () => {
           {{ item }}
         </option>
       </select>
-      <select name="" id="" v-model="price" class="outline-2 px-4 p-2 text-2xl rounded-sm">
+      <select name="" id="" v-model="price" class="outline-2 px-4 p-2 text-2xl rounded-sm" required>
         <option value="" class="" disabled>Price Range</option>
         <option v-for="item in prices" :value="item" :key="item.key">
           {{ item }}
         </option>
       </select>
-      <input type="date" name="" class="outline-2 px-4 p-2 text-2xl rounded-sm" v-model="date" id="">
+      <input type="date" name="" class="outline-2 px-4 p-2 text-2xl rounded-sm" v-model="date" id="" required>
     </div>
     <input name="" class="outline-2 px-4 p-2 mt-5 text-2xl rounded-sm" placeholder="Describe How you want it" v-model="description" id="">
     <RouterLink to="/payment">
       <button class="mt-10 bg-[#141933] p-3 w-fit text-white text-2xl rounded-sm tracking-wide"
-        @click="Checkout_function">Checkout</button>
+        @click="Checkout_function">
+        Checkout
+      </button>
     </RouterLink>
   </div>
 </template>
