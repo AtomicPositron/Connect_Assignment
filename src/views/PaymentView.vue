@@ -3,8 +3,8 @@
     <div class="account">
       <div class="accountNumber">
         <h1 class="text-5xl text-center">Account Number</h1>
-        <h2 class="text-4xl mt-5 text-center">09155332634</h2>
-        <p class="text-3xl text-center">Monie-Point</p>
+        <h2 class="text-4xl mt-5 text-center">9604905194</h2>
+        <p class="text-3xl text-center">Sterling Bank</p>
 
       </div>
     </div>
@@ -23,6 +23,8 @@
         placeholder="Date" readonly>
       <input type="text" name="description" v-model="description"
         class="outline-2 px-3 p-2 text-1xl  rounded-sm" placeholder="discription" readonly>
+<br>
+        <p>Note:Make transfer after or before this to get your assignment done</p>
       <button type="submit" class="mt-5 bg-[#141933] p-3 w-fit text-white text-1xl rounded-sm tracking-wide">Payment
         Made</button>
     </form>
