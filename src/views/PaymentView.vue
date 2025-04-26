@@ -21,8 +21,7 @@
         placeholder="Course" readonly>
       <input type="text" name="date" v-model="date" class="outline-2 px-3 p-2 text-1xl  rounded-sm"
         placeholder="Date" readonly>
-      <input type="text" name="description" v-model="description"
-        class="outline-2 px-3 p-2 text-1xl  rounded-sm" placeholder="discription" readonly>
+      
 <br>
         <p>Note:Make transfer after or before this to get your assignment done</p>
       <button type="submit" class="mt-5 bg-[#141933] p-3 w-fit text-white text-1xl rounded-sm tracking-wide">Payment
@@ -40,5 +39,4 @@ const courseInput = useCourseInput()
 const amount = ref(courseInput.assignmentInfo[2])
 const course = ref(courseInput.assignmentInfo[0])
 const date = ref(courseInput.assignmentInfo[1])
-const description = ref(courseInput.assignmentInfo[3])
 </script>
